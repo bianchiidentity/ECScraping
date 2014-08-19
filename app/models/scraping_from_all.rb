@@ -18,6 +18,7 @@ end
 # htmlをパース(解析)してオブジェクトを作成
 doc = Nokogiri::HTML.parse(html, nil, charset)
 
+#一覧ページからすべての商品の詳細ページへのURLを取得する
 doc.xpath('//div[@class="cfItem"]').each do |node|
 
   p node.xpath('div[@class="deaitiBtn"]/a').attribute('href').value
