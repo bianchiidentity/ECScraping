@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @listpage.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @listpage.url %>
+</p>
+
+<p>
+  <strong>Paging parameter:</strong>
+  <%= @listpage.paging_parameter %>
+</p>
+
+<p>
+  <strong>Paging max:</strong>
+  <%= @listpage.paging_max %>
+</p>
+
+<p>
+  <strong>Paging add:</strong>
+  <%= @listpage.paging_add %>
+</p>
+
+<p>
+  <strong>Link get tag:</strong>
+  <%= @listpage.link_get_tag %>
+</p>
+
+<p>
+  <strong>Link get attribute:</strong>
+  <%= @listpage.link_get_attribute %>
+</p>
+
+<p>
+  <strong>Link get value:</strong>
+  <%= @listpage.link_get_value %>
+</p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @listpage.keyword %>
+</p>
+
+<p>
+  <strong>Details pages:</strong>
+  <%= @listpage.details_pages %>
+</p>
+
+<p>
+  <strong>Csvname:</strong>
+  <%= @listpage.csvname %>
+</p>
+
+<%= link_to 'Edit', edit_listpage_path(@listpage) %> |
+<%= link_to 'Back', listpages_path %>

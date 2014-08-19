@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  url: MyText
+  paging_parameter: MyText
+  paging_max: 1
+  paging_add: 1
+  link_get_tag: MyText
+  link_get_attribute: MyText
+  link_get_value: MyText
+  keyword: MyText
+  details_pages: MyText
+  csvname: MyString
+
+two:
+  name: MyText
+  url: MyText
+  paging_parameter: MyText
+  paging_max: 1
+  paging_add: 1
+  link_get_tag: MyText
+  link_get_attribute: MyText
+  link_get_value: MyText
+  keyword: MyText
+  details_pages: MyText
+  csvname: MyString
