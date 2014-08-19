@@ -1,0 +1,61 @@
+<%= form_for(@listpage) do |f| %>
+  <% if @listpage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@listpage.errors.count, "error") %> prohibited this listpage from being saved:</h2>
+
+      <ul>
+      <% @listpage.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_area :url %>
+  </div>
+  <div class="field">
+    <%= f.label :paging_parameter %><br>
+    <%= f.text_area :paging_parameter %>
+  </div>
+  <div class="field">
+    <%= f.label :paging_max %><br>
+    <%= f.number_field :paging_max %>
+  </div>
+  <div class="field">
+    <%= f.label :paging_add %><br>
+    <%= f.number_field :paging_add %>
+  </div>
+  <div class="field">
+    <%= f.label :link_get_tag %><br>
+    <%= f.text_area :link_get_tag %>
+  </div>
+  <div class="field">
+    <%= f.label :link_get_attribute %><br>
+    <%= f.text_area :link_get_attribute %>
+  </div>
+  <div class="field">
+    <%= f.label :link_get_value %><br>
+    <%= f.text_area :link_get_value %>
+  </div>
+  <div class="field">
+    <%= f.label :keyword %><br>
+    <%= f.text_area :keyword %>
+  </div>
+  <div class="field">
+    <%= f.label :details_pages %><br>
+    <%= f.text_area :details_pages %>
+  </div>
+  <div class="field">
+    <%= f.label :csvname %><br>
+    <%= f.text_field :csvname %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

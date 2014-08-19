@@ -1,0 +1,47 @@
+<h1>Listing listpages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Url</th>
+      <th>Paging parameter</th>
+      <th>Paging max</th>
+      <th>Paging add</th>
+      <th>Link get tag</th>
+      <th>Link get attribute</th>
+      <th>Link get value</th>
+      <th>Keyword</th>
+      <th>Details pages</th>
+      <th>Csvname</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @listpages.each do |listpage| %>
+      <tr>
+        <td><%= listpage.name %></td>
+        <td><%= listpage.url %></td>
+        <td><%= listpage.paging_parameter %></td>
+        <td><%= listpage.paging_max %></td>
+        <td><%= listpage.paging_add %></td>
+        <td><%= listpage.link_get_tag %></td>
+        <td><%= listpage.link_get_attribute %></td>
+        <td><%= listpage.link_get_value %></td>
+        <td><%= listpage.keyword %></td>
+        <td><%= listpage.details_pages %></td>
+        <td><%= listpage.csvname %></td>
+        <td><%= link_to 'Show', listpage %></td>
+        <td><%= link_to 'Edit', edit_listpage_path(listpage) %></td>
+        <td><%= link_to 'Destroy', listpage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Listpage', new_listpage_path %>

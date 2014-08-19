@@ -1,0 +1,2 @@
+module ListpagesHelper
+end
