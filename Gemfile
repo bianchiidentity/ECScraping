@@ -27,10 +27,6 @@ gem 'turbolinks'
 gem 'nokogiri'
 # HTMLやXMLの構造を解析して、特定の要素を指定しやすい形に加工できる
 
-gem 'open-uri'
-gem 'cgi'
-# URLにアクセスするためのライブラリの読み込み
-
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
