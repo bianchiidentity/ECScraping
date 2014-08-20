@@ -1,13 +1,16 @@
 ECScraping::Application.routes.draw do
   resources :listpages
 
+  #基点ページを先頭として、指定した範囲のページURLを抽出する    
+  #get 'listpages/:id/extract1' => 'listpages#extract1'
+  get "/listpages/:id/extract1" => "listpages#extract1", :as => :extract1
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  # Example of regular route:
+  # Example of regular sroute:
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

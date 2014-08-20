@@ -1,5 +1,5 @@
 class ListpagesController < ApplicationController
-  before_action :set_listpage, only: [:show, :edit, :update, :destroy]
+  before_action :set_listpage, only: [:show, :edit, :update, :destroy, :extract1]
 
   # GET /listpages
   # GET /listpages.json
@@ -70,5 +70,9 @@ class ListpagesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def listpage_params
       params.require(:listpage).permit(:name, :url, :paging_parameter, :paging_max, :paging_add, :link_get_tag, :link_get_attribute, :link_get_value, :keyword, :details_pages, :csvname)
+    end
+
+    def extract1
+      @listpage = Listpage.find(params[:id])
     end
 end
