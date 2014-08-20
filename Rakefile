@@ -4,3 +4,10 @@
 require File.expand_path('../config/application', __FILE__)
 
 ECScraping::Application.load_tasks
+
+desc'listpage.rb'
+task :listpage do
+  open('app/models/scraping_from_all.rb'){|f|
+    f.write('Hello Rake world.')
+  }
+end

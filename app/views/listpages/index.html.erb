@@ -42,6 +42,13 @@
   </tbody>
 </table>
 
+<p>
+<% @listpages.each do |listpage| %>
+<%= listpage.name %>
+<% end %>
+</p>
+
+
 <br>
 
 <%= link_to 'New Listpage', new_listpage_path %>

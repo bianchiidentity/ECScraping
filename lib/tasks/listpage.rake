@@ -1,0 +1,2 @@
+namespace :listpage do
+end
