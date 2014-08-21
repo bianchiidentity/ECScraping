@@ -4120,6 +4120,7 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-21 11:28:32
   [1m[36mListpage Load (0.1ms)[0m  [1mSELECT "listpages".* FROM "listpages" ORDER BY "listpages"."id" ASC LIMIT 1[0m
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2014-08-21 14:45:07 +0900
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -4181,40 +4182,169 @@ Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
 
 
 Started GET "/listpages/1/extract2" for 127.0.0.1 at 2014-08-21 14:45:53 +0900
+=======
+Started GET "/listpages/1/extract2" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
 Processing by ListpagesController#extract2 as HTML
   Parameters: {"id"=>"1"}
-  [1m[36mListpage Load (0.1ms)[0m  [1mSELECT "listpages".* FROM "listpages" WHERE "listpages"."id" = ? LIMIT 1[0m  [["id", "1"]]
-  Rendered listpages/extract2.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+  [1m[35mListpage Load (0.1ms)[0m  SELECT "listpages".* FROM "listpages" WHERE "listpages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered listpages/extract2.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 28.7ms | ActiveRecord: 0.6ms)
 
 
-Started GET "/listpages" for 127.0.0.1 at 2014-08-21 14:50:44 +0900
-  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
+
+
+Started GET "/assets/listpages.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
+
+
+Started GET "/assets/listpages.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:21 +0900
+
+
+Started GET "/listpages/" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
 Processing by ListpagesController#index as HTML
-  [1m[35mListpage Load (0.5ms)[0m  SELECT "listpages".* FROM "listpages"
-  Rendered listpages/index.html.erb within layouts/application (22.1ms)
-Completed 200 OK in 137ms (Views: 112.0ms | ActiveRecord: 0.8ms)
+  [1m[36mListpage Load (0.2ms)[0m  [1mSELECT "listpages".* FROM "listpages"[0m
+  Rendered listpages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-21 14:50:44 +0900
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
 
 
-Started GET "/assets/listpages.css?body=1" for 127.0.0.1 at 2014-08-21 14:50:44 +0900
+Started GET "/assets/listpages.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-21 14:50:44 +0900
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
 
 
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-21 14:50:44 +0900
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-21 14:50:44 +0900
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-21 14:50:44 +0900
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
 
 
-Started GET "/assets/listpages.js?body=1" for 127.0.0.1 at 2014-08-21 14:50:44 +0900
+Started GET "/assets/listpages.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-21 14:50:45 +0900
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/listpages/" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+Processing by ListpagesController#index as HTML
+  [1m[35mListpage Load (0.2ms)[0m  SELECT "listpages".* FROM "listpages"
+  Rendered listpages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/listpages.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/assets/listpages.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-21 11:44:29 +0900
+
+
+Started GET "/listpages/1" for 127.0.0.1 at 2014-08-21 11:44:31 +0900
+Processing by ListpagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListpage Load (0.2ms)[0m  [1mSELECT "listpages".* FROM "listpages" WHERE "listpages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered listpages/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listpages/1/extract2" for 127.0.0.1 at 2014-08-21 11:44:33 +0900
+Processing by ListpagesController#extract2 as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListpage Load (0.1ms)[0m  SELECT "listpages".* FROM "listpages" WHERE "listpages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered listpages/extract2.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/listpages/" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+Processing by ListpagesController#index as HTML
+  [1m[36mListpage Load (0.3ms)[0m  [1mSELECT "listpages".* FROM "listpages"[0m
+  Rendered listpages/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/listpages/" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+Processing by ListpagesController#index as HTML
+  [1m[35mListpage Load (0.2ms)[0m  SELECT "listpages".* FROM "listpages"
+  Rendered listpages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+
+
+Started GET "/assets/listpages.css?body=1" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+
+
+Started GET "/assets/listpages.js?body=1" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-21 11:47:19 +0900
+
+
+Started GET "/listpages/1" for 127.0.0.1 at 2014-08-21 11:47:23 +0900
+Processing by ListpagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListpage Load (0.2ms)[0m  [1mSELECT "listpages".* FROM "listpages" WHERE "listpages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered listpages/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listpages/1/extract2" for 127.0.0.1 at 2014-08-21 11:47:24 +0900
+Processing by ListpagesController#extract2 as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListpage Load (0.1ms)[0m  SELECT "listpages".* FROM "listpages" WHERE "listpages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered listpages/extract2.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/listpages/1/extract2" for 127.0.0.1 at 2014-08-21 11:49:07 +0900
