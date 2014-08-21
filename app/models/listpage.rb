@@ -6,8 +6,8 @@ require 'nokogiri'
 
 class Listpage < ActiveRecord::Base
 
-  def execute
-
+  def extract_detail_urls
+  	logger.debug "ここだよ〜〜〜"
     charset = nil
 
     html = open(url) do |f|
