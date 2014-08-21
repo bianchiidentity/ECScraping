@@ -3,7 +3,7 @@ ECScraping::Application.routes.draw do
 
   #基点ページを先頭として、指定した範囲のページURLを抽出する    
   #get 'listpages/:id/extract1' => 'listpages#extract1'
-  get "/listpages/:id/extract1" => "listpages#extract1", :as => :extract1
+  get "/listpages/:id/extract2" => "listpages#extract2", :as => :extract2
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

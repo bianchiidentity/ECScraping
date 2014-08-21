@@ -1,5 +1,5 @@
 class ListpagesController < ApplicationController
-  before_action :set_listpage, only: [:show, :edit, :update, :destroy, :extract1]
+  before_action :set_listpage, only: [:show, :edit, :update, :destroy, :extract2]
 
   # GET /listpages
   # GET /listpages.json
@@ -73,7 +73,7 @@ class ListpagesController < ApplicationController
     end
 
     #ここに基点ページから全ページURLを抽出するプログラムを書く  
-    def extract1
+    def extract2
       @listpage = Listpage.find(params[:id])
     end
 end
