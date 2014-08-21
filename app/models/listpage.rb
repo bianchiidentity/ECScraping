@@ -19,7 +19,7 @@ class Listpage < ActiveRecord::Base
 
       #一覧ページからすべての商品の詳細ページへのURLを取得する
     urls = doc.xpath('//div[@class="cfItem"]').map do |node|
-      node.xpath('div[@class="deaitiBtn"]/a').attribute('href').value
+       node.xpath('div[@class="deaitiBtn"]/a').attribute('href').value
     end
   end
 
