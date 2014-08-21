@@ -2,7 +2,10 @@
 <ul>
 	<%= @listpage.url %>
 	<br>
-	<h2>↑このURLから詳細ページへのリンクをここに表示したい（未実装）</h2>
-	<%= @urls %>
-	<h2>↑ここに出るはず</h2>
+	<h2>↑このURLから詳細ページへのリンクをここに表示する
+	</h2>
+
+	<% @urls.each do |url|%>
+	<p><%= "http://present.cocomo.to" + url %></p>
+	<% end %>
 </ul>
