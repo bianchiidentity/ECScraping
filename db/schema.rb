@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140822012747) do
+ActiveRecord::Schema.define(version: 20140822020820) do
 
   create_table "baseurls", force: true do |t|
     t.text     "baseurl"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 20140822012747) do
     t.text     "paging_parameter"
     t.integer  "paging_max"
     t.integer  "paging_add"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "detailpages", force: true do |t|
+    t.text     "detail_url"
+    t.text     "need_propertys"
+    t.text     "property_get_rules"
+    t.text     "get_property"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

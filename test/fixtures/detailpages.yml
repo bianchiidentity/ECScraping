@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  detail_url: MyText
+  need_propertys: MyText
+  property_get_rules: MyText
+  get_property: MyText
+
+two:
+  detail_url: MyText
+  need_propertys: MyText
+  property_get_rules: MyText
+  get_property: MyText

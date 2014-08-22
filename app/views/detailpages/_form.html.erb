@@ -1,0 +1,33 @@
+<%= form_for(@detailpage) do |f| %>
+  <% if @detailpage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@detailpage.errors.count, "error") %> prohibited this detailpage from being saved:</h2>
+
+      <ul>
+      <% @detailpage.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :detail_url %><br>
+    <%= f.text_area :detail_url %>
+  </div>
+  <div class="field">
+    <%= f.label :need_propertys %><br>
+    <%= f.text_area :need_propertys %>
+  </div>
+  <div class="field">
+    <%= f.label :property_get_rules %><br>
+    <%= f.text_area :property_get_rules %>
+  </div>
+  <div class="field">
+    <%= f.label :get_property %><br>
+    <%= f.text_area :get_property %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

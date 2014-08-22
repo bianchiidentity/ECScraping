@@ -1,4 +1,6 @@
 ECScraping::Application.routes.draw do
+  resources :detailpages
+
   resources :baseurls
 
   resources :listpages
