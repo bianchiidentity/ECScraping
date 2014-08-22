@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Detail url:</strong>
+  <%= @detailpage.detail_url %>
+</p>
+
+<p>
+  <strong>Need propertys:</strong>
+  <%= @detailpage.need_propertys %>
+</p>
+
+<p>
+  <strong>Property get rules:</strong>
+  <%= @detailpage.property_get_rules %>
+</p>
+
+<p>
+  <strong>Get property:</strong>
+  <%= @detailpage.get_property %>
+</p>
+
+<%= link_to 'Edit', edit_detailpage_path(@detailpage) %> |
+<%= link_to 'Back', detailpages_path %>

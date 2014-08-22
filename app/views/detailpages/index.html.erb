@@ -1,0 +1,33 @@
+<h1>Listing detailpages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Detail url</th>
+      <th>Need propertys</th>
+      <th>Property get rules</th>
+      <th>Get property</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @detailpages.each do |detailpage| %>
+      <tr>
+        <td><%= detailpage.detail_url %></td>
+        <td><%= detailpage.need_propertys %></td>
+        <td><%= detailpage.property_get_rules %></td>
+        <td><%= detailpage.get_property %></td>
+        <td><%= link_to 'Show', detailpage %></td>
+        <td><%= link_to 'Edit', edit_detailpage_path(detailpage) %></td>
+        <td><%= link_to 'Destroy', detailpage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Detailpage', new_detailpage_path %>
