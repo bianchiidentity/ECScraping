@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Baseurl:</strong>
+  <%= @baseurl.baseurl %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @baseurl.name %>
+</p>
+
+<p>
+  <strong>Paging parameter:</strong>
+  <%= @baseurl.paging_parameter %>
+</p>
+
+<p>
+  <strong>Paging max:</strong>
+  <%= @baseurl.paging_max %>
+</p>
+
+<p>
+  <strong>Paging add:</strong>
+  <%= @baseurl.paging_add %>
+</p>
+
+<%= link_to 'Edit', edit_baseurl_path(@baseurl) %> |
+<%= link_to 'Back', baseurls_path %>

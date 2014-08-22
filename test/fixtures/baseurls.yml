@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  baseurl: MyText
+  name: MyText
+  paging_parameter: MyText
+  paging_max: 1
+  paging_add: 1
+
+two:
+  baseurl: MyText
+  name: MyText
+  paging_parameter: MyText
+  paging_max: 1
+  paging_add: 1

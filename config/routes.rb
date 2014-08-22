@@ -1,4 +1,6 @@
 ECScraping::Application.routes.draw do
+  resources :baseurls
+
   resources :listpages
 
   #基点ページを先頭として、指定した範囲のページURLを抽出する    
