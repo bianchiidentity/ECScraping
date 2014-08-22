@@ -1,0 +1,35 @@
+<h1>Listing baseurls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Baseurl</th>
+      <th>Name</th>
+      <th>Paging parameter</th>
+      <th>Paging max</th>
+      <th>Paging add</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @baseurls.each do |baseurl| %>
+      <tr>
+        <td><%= baseurl.baseurl %></td>
+        <td><%= baseurl.name %></td>
+        <td><%= baseurl.paging_parameter %></td>
+        <td><%= baseurl.paging_max %></td>
+        <td><%= baseurl.paging_add %></td>
+        <td><%= link_to 'Show', baseurl %></td>
+        <td><%= link_to 'Edit', edit_baseurl_path(baseurl) %></td>
+        <td><%= link_to 'Destroy', baseurl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Baseurl', new_baseurl_path %>
